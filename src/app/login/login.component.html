@@ -1,3 +1,22 @@
-<p>
-  login works!
-</p>
+<html>
+    <body>
+        <div class="box">
+            <img src="/assets/login.jpg" class="loginimg"/>
+            <h2>Login Your Account</h2>
+            <form>
+
+              <p *ngIf='!flag' >{{message}}</p>
+                <p>Email</p>
+                <input #loginId="ngModel"  ngModel name="loginId" type="text" placeholder="Enter Email" required>
+                <p>Password</p>
+                <input #passwd="ngModel"  ngModel  name="passwd" type="password" placeholder="Enter Password" (keyup)="checkuser(loginId.value,passwd.value)" required>
+                <input #userId="ngModel"  [ngModel]="userType" type="text" name="userId" *ngIf="flag" disabled="disabled">
+                <input class="abc1" type="button" value="login" (click)="loginForm()">
+                <a href="#">Forget Password</a>
+            
+            </form>
+        
+        </div>
+    
+    </body>
+</html>
