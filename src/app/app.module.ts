@@ -15,6 +15,7 @@ import {MatMenuModule} from '@angular/material/menu';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {HttpClientModule} from '@angular/common/http';
 import {MatRadioButton, MatRadioGroup} from '@angular/material';
+import { SearchComponent } from './search/search.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import {MatRadioButton, MatRadioGroup} from '@angular/material';
     AppComponent,
     LoginComponent,
     HomeComponent,
-    ExamTestComponent
+    ExamTestComponent,
+    SearchComponent
   ],
   imports: [
     HttpClientModule,
