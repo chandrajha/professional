@@ -84,12 +84,12 @@ export class ExamTestComponent implements OnInit {
     ,status:'1'
     };
 
-    obj.q=f.value.q1;
-    obj.options[0]=f.value.op1;
-    obj.options[1]=f.value.op2;
-    obj.options[2]=f.value.op3;
-    obj.options[3]=f.value.op4;
-    obj.ans=f.value.ans;
+    // obj.q=f.value.q1;
+    // obj.options[0]=f.value.op1;
+    // obj.options[1]=f.value.op2;
+    // obj.options[2]=f.value.op3;
+    // obj.options[3]=f.value.op4;
+    // obj.ans=f.value.ans;
     obj.selectedanswer='';
     obj.status='1';
 

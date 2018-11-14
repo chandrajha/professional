@@ -14,10 +14,10 @@ export class LoginComponent implements OnInit {
   message:String;
 
   userList = [
-                   {userName: 'pandey1@123', password: 'pandey1@123', type: 'admin'},
-                   {userName: 'pandey2@123', password: 'pandey2@123', type: 'admin'},
-                   {userName: 'pandey3#123', password: 'pandey3#123', type: 'normal'},
-                   {userName: 'pandey4#123', password: 'pandey4#123', type: 'normal'},
+                   {userName: 'admin@123', password: 'admin@123', type: 'admin'},
+                   {userName: 'admin@123', password: 'admin@123', type: 'admin'},
+                   {userName: 'user@123', password: 'user@123', type: 'normal'},
+                   {userName: 'user@123', password: 'user@123', type: 'normal'},
                 ];
 
 
