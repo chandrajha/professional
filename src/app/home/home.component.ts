@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 
@@ -8,10 +9,14 @@ import {HttpClient} from '@angular/common/http';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(private http:HttpClient) { }
+  constructor(private http:HttpClient,public route:Router) { }
 
   ngOnInit() {
     this.http.get('http://postalpincode.in/api/pincode/844506').subscribe(res=>console.log(res));
+  }
+
+  examTest(){
+    this.route.navigateByUrl('/Exam Test');
   }
 
   
